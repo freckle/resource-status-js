@@ -1,5 +1,5 @@
 import {maybe} from '@freckle/maybe'
-import {exhaustive} from '@freckle/exhaustive-js'
+import {exhaustive} from '@freckle/exhaustive'
 
 export type ResourceStatusT<R> =
   | {

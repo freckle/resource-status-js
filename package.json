@@ -1,6 +1,6 @@
 {
   "name": "@freckle/resource-status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ResourceStatusT type and utilities",
   "author": "Freckle",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "@freckle/exhaustive-js": "https://github.com/freckle/exhaustive-js.git#v1.0.0",
-    "@freckle/maybe": "https://github.com/freckle/maybe-js.git#v2.2.0"
+    "@freckle/exhaustive": "^1.0.1",
+    "@freckle/maybe": "^2.1.0"
   },
   "devDependencies": {
     "@types/jest": "^28.1.1",

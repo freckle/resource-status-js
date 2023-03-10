@@ -399,19 +399,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@freckle/exhaustive-js@https://github.com/freckle/exhaustive-js.git#v1.0.0":
-  version: 1.0.0
-  resolution: "@freckle/exhaustive-js@https://github.com/freckle/exhaustive-js.git#commit=1480200972984ba530bb7d33ea83dee967391685"
-  checksum: 5c6903e17e1ec53978a151cace982bf220000458ebc517ed52bea8701f94e06c8f32762b5e671e38c4b6ef833713f40713e8951cdcb61ed7f5637fc98b87efc0
+"@freckle/exhaustive@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@freckle/exhaustive@npm:1.0.1"
+  checksum: 6c4815501099ca753916b40751ec9f9450931615e20e0f37866eca8da4230c02d9f3145c45432572205e53e2c041fa659617446173a67932daa4e7216ef62611
   languageName: node
   linkType: hard
 
-"@freckle/maybe@https://github.com/freckle/maybe-js.git#v2.2.0":
+"@freckle/maybe@npm:^2.1.0":
   version: 2.1.0
-  resolution: "@freckle/maybe@https://github.com/freckle/maybe-js.git#commit=163a3fd15a50ee114d6a322aeff7f8fbd9e619ab"
+  resolution: "@freckle/maybe@npm:2.1.0"
   dependencies:
     lodash: ^4.17.21
-  checksum: 0232e21f9b7467e183ece4ac32e65203d185d03c01c2fe774618d4b6d7dc5a8ac417c9d5a66b1ded46d6eaf43fe39dbc0bcb1af2780c2eb0e9ece760abb4bd1c
+  checksum: 2c3753d6d448725d25163261512b5f6598ecea8d68c4955d44fbda2a6f257a7a4f6a4b6ce52c4ba334302a7376064ee04fc2b814d954060a1d60379d5d5531a1
   languageName: node
   linkType: hard
 
@@ -419,8 +419,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/resource-status@workspace:."
   dependencies:
-    "@freckle/exhaustive-js": "https://github.com/freckle/exhaustive-js.git#v1.0.0"
-    "@freckle/maybe": "https://github.com/freckle/maybe-js.git#v2.2.0"
+    "@freckle/exhaustive": ^1.0.1
+    "@freckle/maybe": ^2.1.0
     "@types/jest": ^28.1.1
     "@types/lodash": ^4.14.182
     cpy-cli: 3.1.1

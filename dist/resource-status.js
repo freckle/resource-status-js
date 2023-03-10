@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateResource = exports.isFetching = exports.maybeResourceData = exports.fromMaybeResourceData = void 0;
 const maybe_1 = require("@freckle/maybe");
-const exhaustive_js_1 = require("@freckle/exhaustive-js");
+const exhaustive_1 = require("@freckle/exhaustive");
 function fromMaybeResourceData(resource, defaultData) {
     var _a;
     return (_a = maybeResourceData(resource)) !== null && _a !== void 0 ? _a : defaultData;
@@ -25,7 +25,7 @@ function maybeResourceData(resource) {
         case 'updating-error':
             return resource.data;
         default:
-            return (0, exhaustive_js_1.exhaustive)(resource);
+            return (0, exhaustive_1.exhaustive)(resource);
     }
 }
 exports.maybeResourceData = maybeResourceData;
