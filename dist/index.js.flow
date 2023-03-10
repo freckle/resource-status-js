@@ -1,2 +1,8 @@
 // @flow
-declare export { process } from "./process";
+export type { ResourceStatusT } from "./resource-status";
+declare export {
+  fromMaybeResourceData,
+  maybeResourceData,
+  isFetching,
+  updateResource,
+} from "./resource-status";

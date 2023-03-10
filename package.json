@@ -1,13 +1,13 @@
 {
-  "name": "@freckle/package-name",
+  "name": "@freckle/resource-status",
   "version": "1.0.0",
-  "description": "TODO: Package description",
+  "description": "ResourceStatusT type and utilities",
   "author": "Freckle",
   "license": "MIT",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freckle/package-name-js.git"
+    "url": "git+https://github.com/freckle/resource-status-js.git"
   },
   "scripts": {
     "build": "rm -r dist && tsc -d && node gen-flow.js",
@@ -15,7 +15,8 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@freckle/exhaustive-js": "https://github.com/freckle/exhaustive-js.git#v1.0.0",
+    "@freckle/maybe": "https://github.com/freckle/maybe-js.git#v2.2.0"
   },
   "devDependencies": {
     "@types/jest": "^28.1.1",

@@ -1,0 +1,42 @@
+// @flow
+export type ResourceStatusT<R> =
+  | {|
+      status: "idle",
+    |}
+  | {|
+      status: "loading",
+    |}
+  | {|
+      status: "reloading",
+      data: R,
+    |}
+  | {|
+      status: "error",
+      error: mixed,
+    |}
+  | {|
+      status: "complete",
+      data: R,
+      hasUpdated: boolean,
+    |}
+  | {|
+      status: "updating",
+      data: R,
+    |}
+  | {|
+      status: "updating-error",
+      data: R,
+      error: mixed,
+    |};
+declare export function fromMaybeResourceData<R>(
+  resource: ResourceStatusT<R>,
+  defaultData: R
+): R;
+declare export function maybeResourceData<R>(
+  resource: ResourceStatusT<R>
+): R | void | null;
+declare export function isFetching<R>(resource: ResourceStatusT<R>): boolean;
+declare export var updateResource: <R>(
+  resource: ResourceStatusT<R>,
+  update: (data: R) => R
+) => ResourceStatusT<R>;
