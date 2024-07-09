@@ -28,7 +28,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "prettier": "^2.5.1",
     "ts-jest": "^29.2.0",
-    "typescript": "^4.7.3"
+    "typescript": "^5.5.3"
   },
   "packageManager": "yarn@3.4.1"
 }
