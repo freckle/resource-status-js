@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/jest": "^28.1.1",
     "@types/lodash": "^4.14.182",
-    "cpy-cli": "3.1.1",
+    "cpy-cli": "5.0.0",
     "flow-bin": "0.110.0",
     "flowgen": "^1.17.0",
     "jest": "^28.1.3",
