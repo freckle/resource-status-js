@@ -19,7 +19,7 @@
     "@freckle/maybe": "^2.1.0"
   },
   "devDependencies": {
-    "@types/jest": "^28.1.1",
+    "@types/jest": "^29.5.12",
     "@types/lodash": "^4.14.182",
     "cpy-cli": "5.0.0",
     "flow-bin": "0.110.0",
