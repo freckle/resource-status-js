@@ -10,8 +10,8 @@
     "url": "git+https://github.com/freckle/resource-status-js.git"
   },
   "scripts": {
-    "build": "rm -r dist && tsc -d && node gen-flow.js",
-    "test": "jest && flow",
+    "build": "rm -r dist && tsc -d",
+    "test": "jest",
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
@@ -22,8 +22,6 @@
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.14.182",
     "cpy-cli": "5.0.0",
-    "flow-bin": "0.110.1",
-    "flowgen": "^1.17.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.3.2",
