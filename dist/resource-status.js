@@ -1,13 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.updateResource = exports.isFetching = exports.maybeResourceData = exports.fromMaybeResourceData = void 0;
+exports.updateResource = void 0;
+exports.fromMaybeResourceData = fromMaybeResourceData;
+exports.maybeResourceData = maybeResourceData;
+exports.isFetching = isFetching;
 const maybe_1 = require("@freckle/maybe");
 const exhaustive_1 = require("@freckle/exhaustive");
 function fromMaybeResourceData(resource, defaultData) {
     var _a;
     return (_a = maybeResourceData(resource)) !== null && _a !== void 0 ? _a : defaultData;
 }
-exports.fromMaybeResourceData = fromMaybeResourceData;
 function maybeResourceData(resource) {
     switch (resource.status) {
         case 'idle':
@@ -28,11 +30,9 @@ function maybeResourceData(resource) {
             return (0, exhaustive_1.exhaustive)(resource);
     }
 }
-exports.maybeResourceData = maybeResourceData;
 function isFetching(resource) {
     return resource.status === 'loading' || resource.status === 'reloading';
 }
-exports.isFetching = isFetching;
 const updateResource = (resource, update) => {
     const mData = maybeResourceData(resource);
     return (0, maybe_1.maybe)(() => resource, data => ({
