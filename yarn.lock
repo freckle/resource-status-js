@@ -616,7 +616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@freckle/maybe@npm:^2.1.0":
+"@freckle/maybe@npm:^2.2.0":
   version: 2.2.0
   resolution: "@freckle/maybe@npm:2.2.0"
   dependencies:
@@ -630,7 +630,7 @@ __metadata:
   resolution: "@freckle/resource-status@workspace:."
   dependencies:
     "@freckle/exhaustive": ^1.0.1
-    "@freckle/maybe": ^2.1.0
+    "@freckle/maybe": ^2.2.0
     "@types/jest": ^29.5.14
     "@types/lodash": ^4.17.20
     cpy-cli: 6.0.0
