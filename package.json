@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@freckle/exhaustive": "^1.0.1",
-    "@freckle/maybe": "^2.1.0"
+    "@freckle/maybe": "^2.2.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
