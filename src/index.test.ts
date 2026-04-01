@@ -1,3 +1,4 @@
+import {describe, it, expect, vi} from 'vitest'
 import {
   type ResourceStatusT,
   maybeResourceData,
@@ -98,7 +99,7 @@ describe('resource-status', () => {
 
   describe('updateResource', () => {
     it('should not call update and return resource for resource with no data ', () => {
-      const updateFn = jest.fn()
+      const updateFn = vi.fn()
       const result = updateResource(idle, updateFn)
       expect(result).toEqual(idle)
       expect(updateFn).not.toHaveBeenCalled()

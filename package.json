@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "rm -r dist && tsc -d",
-    "test": "jest",
+    "test": "vitest run",
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
@@ -19,11 +19,9 @@
     "@freckle/maybe": "^2.2.0"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0",
-    "jest": "^30.3.0",
     "prettier": "^3.8.1",
-    "ts-jest": "^29.4.6",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
   },
-  "packageManager": "yarn@3.8.7"
+  "packageManager": "pnpm@10.30.3"
 }
