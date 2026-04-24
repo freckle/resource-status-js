@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@freckle/exhaustive": "^1.1.0",
-    "@freckle/maybe": "^2.2.0"
+    "@freckle/maybe": "^2.3.0"
   },
   "devDependencies": {
     "prettier": "^3.8.3",
