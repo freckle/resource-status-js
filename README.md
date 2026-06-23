@@ -8,7 +8,7 @@ Defines the `ResourceStatusT` type and utilities operating on this type.
 yarn add @freckle/resource-status
 ```
 
-## Versioning and release process
+## Release
 
 See [RELEASE.md](./RELEASE.md).
 
