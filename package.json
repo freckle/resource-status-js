@@ -19,7 +19,7 @@
     "@freckle/maybe": "^2.3.0"
   },
   "devDependencies": {
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.4",
     "typescript": "^6.0.3",
     "vitest": "^4.1.9"
   },
