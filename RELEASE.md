@@ -11,4 +11,8 @@ To trigger a release in this project, merge a commit to `main` prefixed with:
 
 Pre-releases can be made by pushing to an `rc/*` branch.
 
+The release does not commit anything back to `main`. `dist/` is tracked, and CI
+checks on every pull request that the committed copy matches a fresh build, so
+`main` is already correct by the time a release runs.
+
 For more details, see the [Semantic Release](https://illuminate.atlassian.net/wiki/spaces/PENG/pages/17952735277/Semantic+Release) documentation.
