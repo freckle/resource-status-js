@@ -2,7 +2,7 @@
   "name": "@freckle/resource-status",
   "version": "1.0.1",
   "description": "ResourceStatusT type and utilities",
-  "author": "Freckle",
+  "author": "Renaissance Learning Inc",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
