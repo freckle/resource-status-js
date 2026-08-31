@@ -1,16 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.updateResource = void 0;
-exports.fromMaybeResourceData = fromMaybeResourceData;
-exports.maybeResourceData = maybeResourceData;
-exports.isFetching = isFetching;
-const maybe_1 = require("@freckle/maybe");
-const exhaustive_1 = require("@freckle/exhaustive");
-function fromMaybeResourceData(resource, defaultData) {
-    var _a;
-    return (_a = maybeResourceData(resource)) !== null && _a !== void 0 ? _a : defaultData;
+import { maybe } from '@freckle/maybe';
+import { exhaustive } from '@freckle/exhaustive';
+export function fromMaybeResourceData(resource, defaultData) {
+    return maybeResourceData(resource) ?? defaultData;
 }
-function maybeResourceData(resource) {
+export function maybeResourceData(resource) {
     switch (resource.status) {
         case 'idle':
             return null;
@@ -27,18 +20,17 @@ function maybeResourceData(resource) {
         case 'updating-error':
             return resource.data;
         default:
-            return (0, exhaustive_1.exhaustive)(resource);
+            return exhaustive(resource);
     }
 }
-function isFetching(resource) {
+export function isFetching(resource) {
     return resource.status === 'loading' || resource.status === 'reloading';
 }
-const updateResource = (resource, update) => {
+export const updateResource = (resource, update) => {
     const mData = maybeResourceData(resource);
-    return (0, maybe_1.maybe)(() => resource, data => ({
+    return maybe(() => resource, data => ({
         status: 'complete',
         data: update(data),
         hasUpdated: false // This is used for async updates, e.g. from a fetch response
     }), mData);
 };
-exports.updateResource = updateResource;
