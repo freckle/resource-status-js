@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+      - rc/*
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: cycjimmy/semantic-release-action@v6.0.0
+        # conventional-changelog-conventionalcommits is held at 9.x: v10 requires
+        # conventional-changelog-writer@9, while semantic-release@25 resolves
+        # writer@8 via @semantic-release/release-notes-generator@14. Unpinned, the
+        # release fails with `Missing helper: "..."`.
+        with:
+          extra_plugins: |
+            conventional-changelog-conventionalcommits@9
+        env:
+          FORCE_COLOR: 1
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
