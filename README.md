@@ -5,12 +5,31 @@ Defines the `ResourceStatusT` type and utilities operating on this type.
 ## Install
 
 ```sh
-yarn add @freckle/resource-status
+pnpm add @freckle/resource-status
 ```
 
 ## Release
 
 See [RELEASE.md](./RELEASE.md).
+
+## Development
+
+```sh
+pnpm install
+```
+
+| Script             | What it does                                              |
+| ------------------ | --------------------------------------------------------- |
+| `pnpm build`       | Compiles `src/` to `dist/` via `tsconfig.build.json`      |
+| `pnpm test`        | Runs the test suite                                       |
+| `pnpm coverage`    | Runs the test suite with coverage, gated at 70%           |
+| `pnpm typecheck`   | Type-checks `src/`, test files included, without emitting |
+| `pnpm format`      | Rewrites `src/**/*.ts` with Prettier                      |
+| `pnpm format-check`| Checks `src/**/*.ts` formatting without rewriting         |
+| `pnpm lint`        | Runs ESLint                                               |
+| `pnpm knip`        | Reports unused files, dependencies, and exports           |
+
+`dist/` is committed. Run `pnpm build` before pushing; CI fails if it is stale.
 
 ## `ResourceStatusT<R>`
 
