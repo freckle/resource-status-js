@@ -12,8 +12,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@freckle/maybe':
-        specifier: ^2.3.0
-        version: 2.3.0
+        specifier: ^2.3.1
+        version: 2.3.1
     devDependencies:
       prettier:
         specifier: ^3.9.6
@@ -186,8 +186,8 @@ packages:
   '@freckle/exhaustive@1.1.0':
     resolution: {integrity: sha512-YX2jQGptML1vM3K7k1o9VUb9yOsLkX4Nv8MjD3zbtLijtLQ+H5nBIhswiFjaupbUNMUtV0C0GRSG+oeZmB/p6A==}
 
-  '@freckle/maybe@2.3.0':
-    resolution: {integrity: sha512-I+qNU+CUEQORuKXUK35W2SMLU9KU5j+EgneJw84fe/sJyIvitDD0zfSWCaTnkWGQTl5IFJS8l3WGSGQtsAikiQ==}
+  '@freckle/maybe@2.3.1':
+    resolution: {integrity: sha512-lhomXb70nQbq1ASaDDc7PoPMrT7kav/FcYsoD6yfFetreN03SbZb1dawxAZxMs7ojx0eqGHaStut9A+hA60QoQ==}
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -531,9 +531,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  lodash@4.18.1:
-    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
-
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -770,9 +767,7 @@ snapshots:
 
   '@freckle/exhaustive@1.1.0': {}
 
-  '@freckle/maybe@2.3.0':
-    dependencies:
-      lodash: 4.18.1
+  '@freckle/maybe@2.3.1': {}
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -1012,8 +1007,6 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
-
-  lodash@4.18.1: {}
 
   magic-string@0.30.21:
     dependencies:
