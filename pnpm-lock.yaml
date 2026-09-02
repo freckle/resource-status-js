@@ -12,8 +12,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       '@freckle/maybe':
-        specifier: ^2.3.1
-        version: 2.3.1
+        specifier: ^3.0.0
+        version: 3.0.0
     devDependencies:
       prettier:
         specifier: ^3.9.6
@@ -186,8 +186,8 @@ packages:
   '@freckle/exhaustive@2.0.0':
     resolution: {integrity: sha512-8+iK347puOu0MhCOchH8rFW+bCiNxpYt8J5SiFVp6adYAVZYmH9wxKn3b0v3RY4vGUN56GRB3/csFJFe9elVEw==}
 
-  '@freckle/maybe@2.3.1':
-    resolution: {integrity: sha512-lhomXb70nQbq1ASaDDc7PoPMrT7kav/FcYsoD6yfFetreN03SbZb1dawxAZxMs7ojx0eqGHaStut9A+hA60QoQ==}
+  '@freckle/maybe@3.0.0':
+    resolution: {integrity: sha512-Fbur69nzwdHxz6PvwXrD3wurBnJa2/YcE4La8kDJ8IGsbCKdgWBk6i/6d3VbS8SCYJbkAjR+ghdN8BfN0lG0pg==}
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -767,7 +767,7 @@ snapshots:
 
   '@freckle/exhaustive@2.0.0': {}
 
-  '@freckle/maybe@2.3.1': {}
+  '@freckle/maybe@3.0.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
