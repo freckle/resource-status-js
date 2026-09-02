@@ -5,7 +5,7 @@ import {
   fromMaybeResourceData,
   isFetching,
   updateResource
-} from '.'
+} from './index.js'
 
 type TestData = 'foo' | 'bar' | 'baz'
 type TestResource = ResourceStatusT<TestData>
@@ -27,11 +27,11 @@ describe('resource-status', () => {
   describe('maybeResourceData', () => {
     it('should return null for idle resource', () => {
       const result = maybeResourceData(idle)
-      expect(result).toBeNull
+      expect(result).toBeNull()
     })
     it('should return null for loading resource', () => {
       const result = maybeResourceData(loading)
-      expect(result).toBeNull
+      expect(result).toBeNull()
     })
     it('should return data for reloading resource', () => {
       const result = maybeResourceData(reloading)
@@ -39,7 +39,7 @@ describe('resource-status', () => {
     })
     it('should return null for error resource', () => {
       const result = maybeResourceData(error)
-      expect(result).toBeNull
+      expect(result).toBeNull()
     })
     it('should return data for complete resource', () => {
       const result = maybeResourceData(complete)
