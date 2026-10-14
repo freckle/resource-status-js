@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
-      - uses: cycjimmy/semantic-release-action@v7.1.2
+      - uses: cycjimmy/semantic-release-action@v8.0.1
         # conventional-changelog-conventionalcommits is held at 9.x: v10 requires
         # conventional-changelog-writer@9, while semantic-release@25 resolves
         # writer@8 via @semantic-release/release-notes-generator@14. Unpinned, the
